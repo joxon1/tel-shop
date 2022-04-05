@@ -13,3 +13,28 @@
   display: flex;
   justify-content: space-around;
 }
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 0 1rem;
+}
+.list-item-img {
+  width: 100%;
+}
+.card {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+}
+.card-body {
+  flex-grow: 1;
+  text-align: start;
+}
+.card__img {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+}
