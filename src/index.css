@@ -38,3 +38,14 @@
   justify-content: space-around;
   padding: 15px;
 }
+.sidebar__ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+.sidebar__ul li {
+  text-decoration: none;
+  padding: 10px;
+  box-shadow: #ccc 0px 1px 3px;
+  margin: 5px;
+}
