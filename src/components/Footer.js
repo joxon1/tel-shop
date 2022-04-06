@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <nav className="navbar navbar-dark bg-dark">
+    <nav className="navbar navbar-dark bg-dark footer-nav ">
       <div className=" conatiner footer__btn">
         <a href="#">
           <svg

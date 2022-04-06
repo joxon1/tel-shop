@@ -7,12 +7,18 @@ import "../style/Header.css";
 
 export default function Header() {
   const [sidebar, setSidebar] = useState(false);
+
+  const showSidebar = (e) => {
+    e.preventDefault();
+    setSidebar(!sidebar);
+  };
+
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
         <div className="header">
           <a href="#" className="menu-bars">
-            <FaIcons.FaBars onClick={() => setSidebar(!sidebar)} />
+            <FaIcons.FaBars onClick={showSidebar} />
           </a>
           <h1 className="logo">-TelShop-</h1>
         </div>
@@ -20,7 +26,7 @@ export default function Header() {
           <ul className="nav-menu-items">
             <li className="navbar-toggle">
               <a href="#" className="menu-bars">
-                <AiIcons.AiOutlineClose onClick={() => setSidebar(!sidebar)} />
+                <AiIcons.AiOutlineClose onClick={showSidebar} />
               </a>
             </li>
             {SidebarDate.map((item, index) => (

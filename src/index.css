@@ -13,10 +13,16 @@
   display: flex;
   justify-content: space-evenly;
 }
+.footer-nav {
+  position: fixed;
+  z-index: 8;
+  width: 100%;
+  bottom: 0;
+}
 .list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 0 1rem;
+  padding: 60px 1rem 30px 1rem;
 }
 .list-item-img {
   width: 100%;
