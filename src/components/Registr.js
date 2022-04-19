@@ -9,14 +9,10 @@ export default function Registr() {
         <div className="register_tablo ">
           <div className="register_input">
             <h1>Создать аккаунт</h1>
-            <input
-              type="text"
-              placeholder="Name..."
-              className="btn btn-outline-dark"
-            />
+
             <input
               type="email"
-              placeholder="Email..."
+              placeholder=" Name or Email"
               className="btn btn-outline-dark"
             />
             <input
