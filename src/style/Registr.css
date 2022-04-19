@@ -41,3 +41,9 @@
   padding: 20px;
   font-size: 30px;
 }
+@media (max-width: 912px) {
+  .register_tablo {
+    height: 500px;
+    width: 300px;
+  }
+}
