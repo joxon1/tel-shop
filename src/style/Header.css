@@ -8,9 +8,15 @@
   width: 100%;
   z-index: 8;
 }
-.logo {
+.logo_home {
   color: #fff;
-  padding: 30px;
+  padding-left: 20px;
+  text-decoration: none;
+  font-size: 30px;
+}
+.login_home,
+btn-success {
+  margin-right: 20px;
 }
 .menu-bars {
   margin-left: 2rem;
