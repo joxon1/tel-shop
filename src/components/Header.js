@@ -17,7 +17,9 @@ export default function Header() {
           <Link to="/login" className="btn btn-success" onClick={showLogin}>
             Войти
           </Link>
-          <div className="btn btn-primary">Регистрация</div>
+          <Link to="/registr" className="btn btn-primary">
+            Регистрация
+          </Link>
         </div>
       </nav>
     </>

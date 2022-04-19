@@ -2,13 +2,13 @@ import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import "../style/Login.css";
 
-export default function Login() {
+export default function Login(showLogin) {
   return (
-    <div className="login_body">
+    <div className={showLogin ? "login_body active" : "login_body"}>
       <div className="login">
         <div className="desc">
           <h1 className="logo">-TelShop-</h1>
-          <p className="logo_decs">Evenet Menegment</p>
+          <p className="logo_decs">Event Menegment</p>
         </div>
         <div className="login_tablo">
           <div className="login_input">
@@ -22,10 +22,13 @@ export default function Login() {
               placeholder="password"
               className="login_password btn btn-outline-dark"
             />
-            <Link to="/add" className="btn btn-success">
+            <Link to="/" className="btn btn-success">
               Войти
             </Link>
-            <Link to="registr" className="text-center"> Забыли пароль? </Link>
+            <Link to="/registr" className="text-center">
+              {" "}
+              Забыли пароль?{" "}
+            </Link>
             <Link to="/registr" className="btn btn-primary">
               Регистрация
             </Link>
