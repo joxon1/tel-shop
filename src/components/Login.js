@@ -1,10 +1,12 @@
+import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import "../style/Login.css";
 
-export default function Login(showLogin) {
+export default function Login() {
+
   return (
-    <div className={showLogin ? "login_body active" : "login_body"}>
+    <nav className="login_body">
       <div className="login">
         <div className="desc">
           <h1 className="logo">-TelShop-</h1>
@@ -26,8 +28,7 @@ export default function Login(showLogin) {
               Войти
             </Link>
             <Link to="/registr" className="text-center">
-              {" "}
-              Забыли пароль?{" "}
+              Забыли пароль?
             </Link>
             <Link to="/registr" className="btn btn-primary">
               Регистрация
@@ -39,6 +40,6 @@ export default function Login(showLogin) {
           <AiOutlineClose />
         </Link>
       </div>
-    </div>
+    </nav>
   );
 }

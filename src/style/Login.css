@@ -6,14 +6,15 @@
   justify-content: center;
   position: fixed;
   top: 0;
-  left: -100%;
+  left: 0;
   transition: 850ms;
   z-index: 9;
 }
-.login_body.active {
+
+/* .login_body.active {
   left: 0;
   transition: 350ms;
-}
+} */
 .login {
   margin: 0 auto;
   width: 800px;

@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import Login from "./Login";
-export default function Home() {
+import ItemList from "./ItemList";
 
+export default function Home() {
   return (
-    <div className="container"></div>
+    <div className="container">
+      <ItemList  />
+    </div>
   );
 }

@@ -8,8 +8,6 @@ import Registr from "./components/Registr";
 import { useState } from "react";
 
 export default function App() {
-  const [login, setLogin] = useState(false);
-  const showLogin = () => setLogin(!login);
   return (
     <div className="App">
       <Header />
