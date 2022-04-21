@@ -1,10 +1,8 @@
-import Item from "./Item";
-import initialState from "../redux/reducers/itemReducer";
-
+import Abdulaziz from "./Abdulaziz";
 export default function ItemList({ catalog = [] }) {
   return (
     <div className="list">
-      {initialState.map((item, index) => (
+      {Abdulaziz.map((item, index) => (
         <div className="card" key={index}>
           <div className="card-image">
             <img src={item.image} alt={item.name} />

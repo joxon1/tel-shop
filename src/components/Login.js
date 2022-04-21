@@ -36,7 +36,7 @@ export default function Login() {
           </div>
         </div>
 
-        <Link to="/home" className="menu_bars">
+        <Link to="/" className="menu_bars">
           <AiOutlineClose />
         </Link>
       </div>
